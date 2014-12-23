@@ -1,0 +1,27 @@
+/**
+ * General
+ */
+body
+{
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: #F8FBEF;
+}
+
+/**
+ * Header
+ */
+header
+{
+  margin-top: 20px;
+}
+
+#site-nav
+{
+}
+#site-nav li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}

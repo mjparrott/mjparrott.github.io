@@ -4,16 +4,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ page.title }}</title>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Michael Parrott | {{ page.title }}</title>
+    <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+    {% if page.type == "post" %}
+    <link type="text/css" rel="stylesheet" href="/css/posts.css"/>
+    {% endif %}
   </head>
   <body>
-    <ul>
-      <a href="/"><li>Home</li></a>
-      <a href="https://github.com/mjparrott"><li>Github</li></a>
-      <a href="/contact"><li>Contact</li></a>
-      <a href="/about"><li>About</li></a>
-    </ul>
+    <header>
+      <h1 style = "display: inline;">Michael Parrott</h1>
+      <ul id = "site-nav" style = "float: right;">
+        <a href="/"><li>Home</li></a>
+        <a href="https://github.com/mjparrott"><li>Github</li></a>
+        <a href="https://ca.linkedin.com/in/mjparrott"><li>LinkedIn</li></a>
+        <a href="/files/resume.pdf"><li>Resume</li></a>
+        <a href="/about"><li>About</li></a>
+      </ul>
+    </header>
+
     {{ content }}
+
+    <footer></footer>
   </body>
 </html>

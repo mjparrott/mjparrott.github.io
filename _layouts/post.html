@@ -1,7 +1,11 @@
 ---
 layout: default
+type: post
 ---
 
-Page
-
-{{ content }}
+<article>
+  <h2 class = "post-title">{{ page.title }}</h2>
+  <h3 class = "post-date">{{ page.date | date: "%-d %b %Y"}}</h3>
+  
+  {{ content }}
+</article>
