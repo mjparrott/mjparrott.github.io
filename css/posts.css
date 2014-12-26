@@ -18,4 +18,5 @@
 .post-content
 {
   margin-left: 25px;
+  max-width: 600px;
 }
