@@ -32,3 +32,11 @@ header
 {
   text-decoration: none;
 }
+
+/**
+ * Main content
+ */
+#content
+{
+  padding: 10px;
+}
