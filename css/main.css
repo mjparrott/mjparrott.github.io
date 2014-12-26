@@ -19,9 +19,6 @@ header
   padding-bottom: 10px;
 }
 
-#site-nav
-{
-}
 #site-nav li
 {
   display: inline;
@@ -31,6 +28,13 @@ header
 #site-nav a
 {
   text-decoration: none;
+}
+@media (min-width: 600px)
+{
+#site-nav
+{
+  float: right;
+}
 }
 
 /**
