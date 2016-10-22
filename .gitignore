@@ -2,3 +2,4 @@ _site/
 serve/
 Gemfile
 Gemfile.lock
+*.swp
