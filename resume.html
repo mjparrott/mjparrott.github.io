@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+  <link rel = "stylesheet" type = "text/css" href = "resume.css"/>
+</head>
+<body>
+  <div id = "header">
+    <div style = "width: 350px; float: left;">
+      <p id = "name">Michael Parrott</p>
+      <p id = "program">Computer Science</p>
+    </div>
+    <div class = "contact-info" style = "margin-left: 340px;">
+      <p id = "phone-number">(647) 985-4594</p>
+      <p id = "email">michael.parrott94@gmail.com</p>
+      <p id = "github">github.com/mjparrott</p>
+    </div>
+  </div>
+
+  <div id = "skills" class = "section">
+    <div class = "section-title">Skills</div>
+    <ul class = "no-bullet">
+      <li><strong>Languages</strong>: Scala, Python, Java, C++, C, Ruby, JavaScript, Bash, Racket, PHP, HTML, CSS</li>
+      <li><strong>Frameworks</strong>: Sencha Touch, PhoneGap, Slick, Lettuce, jQuery, Lawnchair.js, Django, Ruby on Rails, Ember.js</li>
+      <li><strong>Tools</strong>: Git, Chef, Cassandra, MySQL, Google Datastore/Cloud Storage, Thrift, Memcached, SBT, Eclipse, Vim</li>
+    </ul>
+  </div>
+
+  <div id = "work-experience" class = "section">
+    <div class = "section-title">Work Experience</div>
+
+    <div class = "job">
+      <div class = "job-info indent-text">
+        <span class = "job-employer">PagerDuty,</span>
+        <span class = "job-title">Software Engineer,</span>
+        <span class = "job-location">Toronto, ON</span>
+        <span class = "job-time">August 2016 - present</span>
+      </div>
+      <ul>
+        <li>Working as a software engineer on the incident management systems team, using Ruby, Rails, MySQL, and EmberJS</li>
+      </ul>
+    </div>
+    <div class = "job">
+      <div class = "job-info indent-text">
+        <span class = "job-employer">Snapchat</span>,
+        <span class = "job-title">Software Engineer</span>,
+        <span class = "job-location">Los Angeles, CA</span>
+        <span class = "job-time">January - April 2016</span>
+      </div>
+      <ul>
+        <li>Developed a Python wrapper for machine learning library BIDMach to enable
+        GPU based model learning, using JPype library to interact with Scala code from Python</li>
+        <li>Created an interface and backend in Django to enable interactive training of
+          thousands of machine learning models</li>
+        <li>Wrote script to upload millions of images and their metadata to Google Datastore and
+        Cloud Storage to be used for training machine learning models</li>
+      </ul>
+    </div>
+    <div class = "job">
+      <div class = "job-info indent-text">
+        <span class = "job-employer">Facebook</span>,
+        <span class = "job-title">Software Engineer</span>,
+        <span class = "job-location">Menlo Park, CA</span>
+        <span class = "job-time">May - August 2015</span>
+      </div>
+      <ul>
+        <li>Prototyped a new service, written in C++ and an internal stream processing framework
+          to do realtime SQL streaming, using ANTLR to do SQL parsing</li>
+        <li>Performed benchmarks against old Java service and found a 15% speedup
+          with decreased CPU usage</li>
+        <li>Researched and presented a paper about stream join usage in a production environment</li>
+      </ul>
+    </div>
+    <div class = "job">
+      <div class = "job-info indent-text">
+        <span class = "job-employer">PagerDuty</span>,
+        <span class = "job-title">Realtime Software Engineer</span>,
+        <span class = "job-location">Toronto, ON</span>
+        <span class = "job-time">August - December 2014</span>
+      </div>
+
+      <ul>
+        <li>Created a data archiver using Scala and Slick to archive old customer data from Cassandra to a MySQL database,
+          stored in Amazon's RDS, archiving millions of notifications in production</li>
+        <li>Investigated datacentre preference in Netflix's Cassandra client, Astyanax, and how the Thrift client,
+          Finagle, performs load balancing and request retries</li>
+      </ul>
+    </div>
+
+    <div class = "job">
+      <div class = "job-info indent-text">
+        <span class = "job-employer">Arctic Wolf Networks</span>,
+        <span class = "job-title">Software Developer</span>,
+        <span class = "job-location">Kitchener, ON</span>
+        <span class = "job-time">January - April 2014</span>
+      </div>
+
+      <ul>
+        <li>Developed and configured multiple services in Python, including one which used Memcached
+          to cache URL categorization requests sent to an external web service</li>
+        <li>Sped up parsing of string output from WMIC utility by a factor of 60</li>
+      </ul>
+    </div>
+
+    <div id = "last-job" class = "job">
+      <div class = "job-info indent-text">
+        <span class = "job-employer">Metroland (Save.ca)</span>,
+        <span class = "job-title">Software Developer</span>,
+        <span class = "job-location">Markham, ON</span>
+        <span class = "job-time">May - August 2013</span>
+      </div>
+
+      <ul>
+        <li>Created responsive web pages including an FAQ page, the deals page, and the home page for Save.ca with PHP, Yii,
+          MySQL, jQuery, HTML, and CSS</li>
+      </ul>
+    </div>
+
+  </div>
+  
+  <div id = "education" class = "section">
+    <div class = "section-title">Education</div>
+    <div class = "indent-text">
+      <strong>Bachelors of Computer Science</strong>, Honours Computer Science, University of Waterloo
+        (Expected May 2017)
+    </div>
+
+    <p></p>
+
+    <div class = "indent-text">
+      <div><strong>Dean's Honours List</strong>, Fall 2012/Winter 2013/Fall 2013/Spring 2014/Winter 2015/Spring 2016</div>
+      <div><strong>President's Athlete Academic Honour Roll</strong>, Fall 2012/Fall 2013</div>
+    </div>
+
+    <p></p>
+    <div class = "indent-text">
+      <div><strong>Undergraduate Research Assistant</strong>: Social Networking for Users with Assistive Needs
+      <span class = "time-frame">Fall 2015, Spring 2016</span> </div>
+    </div>
+      <ul>
+        <li>Researched different methods of how a web page segmentation algorithm could be used to
+          improve social networks and general computing for the elderly and visually impaired</li>
+      </ul>
+
+  </div>
+
+  <div id = "projects" class = "section">
+    <div class = "section-title">Projects <span style="font-size: 12px">(see github.com/mjparrott)</span></div>
+    <div class = "project">
+      <div class = "project-info indent-text">
+        <span class = "project-title">Myo Muscles</span>
+        <span> - Keep track of your workouts and exercise form using Thamlic Labs' Myo</span>
+        <span class = "project-time">September 2014</span>
+      </div>
+    </div>
+
+    <div class = "project">
+      <div class = "project-info indent-text">
+        <span class = "project-title">Cap It</span>
+        <span> - Rate captions on your friends' old Facebook photos</span>
+        <span class = "project-time">February 2014</span>
+      </div>
+    </div>
+
+    <div id = "last-project" class = "project" style = "margin-bottom: 5px;">
+      <div class = "project-info indent-text">
+        <span class = "project-title">GDC (GNU D Compiler)</span>
+        <span> - Revived development of GDC</span>
+        <span class = "project-time">September 2009 - November 2010</span>
+      </div>
+    </div>
+  </div>
+
+  <div id = "extracurriculars" class = "section">
+    <div class = "section-title">Extracurriculars</div>
+    <div class = "indent-text" style="margin-bottom: 5px"><strong>Programming</strong> -
+      Contests (Google Code Jam, TopCoder), Coursera (Computer Networks, Algorithms, Functional Programming in
+      Scala, Principles of Reactive Programming), HackerRank (mjparrott)
+    </div>
+    <div class = "indent-text"><strong>Athletics</strong> -
+      University of Waterloo varsity baseball team (Fall 2012/2013/2015), intramural basketball/volleyball
+    </div>
+  </div>
+</body>
+</html>

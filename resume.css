@@ -1,0 +1,167 @@
+/**
+ * General
+ */
+body
+{
+  width: 700px;
+  margin: 0px auto;
+  font-family: Georgia;
+  font-size: 13px;
+}
+.cover_letter
+{
+  line-height: 150%;
+  font-size: 14px;
+}
+.address
+{
+  line-height: 10%;
+}
+.letter
+{
+  margin-top: 25px;
+}
+.closing
+{
+  margin-top: 30px;
+  line-height: 50%;
+}
+
+ul
+{
+  margin: 0px;
+}
+
+li
+{
+  margin: 1px 0px;
+}
+
+.indent-text
+{
+  margin-left: 15px;
+}
+
+.section
+{
+  padding-bottom: 10px;
+}
+
+.section-title
+{
+  font-style: italic;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+  margin-bottom: 8px;
+}
+
+.spacer
+{
+  height: 30px;
+}
+
+.no-bullet
+{
+  padding-left: 0px;
+  margin-left: 15px; /* Should match .indent-text */
+  list-style-type: none;
+}
+
+/**
+ * Header
+ */
+#header
+{
+  width: 100%;
+  overflow: hidden;
+}
+
+#header #name
+{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+#header p
+{
+  margin: 2px;
+}
+
+#header .contact-info
+{
+  text-align: right;
+}
+
+/**
+ * Jobs section
+ */
+.job
+{
+  margin-bottom: 13px;
+}
+#last-job
+{
+  margin-bottom: 8px;
+}
+
+.job .job-title
+{
+  font-style: italic;
+}
+
+.job .job-employer
+{
+  font-weight: bold;
+}
+
+.job-employer:after
+{
+  content: "";
+}
+
+.job .job-time
+{
+  float: right;
+}
+
+/**
+ * Projects section
+ */
+.project
+{
+  margin-bottom: 5px;
+}
+#last-project
+{
+  margin-bottom: 0px;
+}
+.project .project-info .project-title
+{
+  font-weight: bold;
+}
+.project-title:after
+{
+  content: "";
+}
+.project .project-time
+{
+  float: right;
+}
+
+/**
+ * Extracurriculars section
+ */
+.extracurricular
+{
+  margin-bottom: 15px;
+}
+
+.extracurricular .extracurricular-title
+{
+  font-weight: bold;
+}
+
+.time-frame {
+  float: right;
+}
