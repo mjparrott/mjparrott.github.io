@@ -24,3 +24,59 @@ https://medium.com/@bartobri/applying-the-linus-tarvolds-good-taste-coding-requi
   better or worse. By trying to evaluate these different pieces of code for things like readability and
   future maintainability, the ability to write better code in the future should improve.
 </p>
+
+<p>
+  An example from my own code involves uses Promises. A Promise is "an eventual result of an asynchronous operation".
+  In my code, I had two promises I wanted to resolve. Only 1 or both of the promises need to be executed, depending
+  on some condition for each promise. After all of the desired promises had resolved, a piece of code had to be run.
+  Originally, I solved it doing something like this:
+  <pre>
+    new Promise(function(resolve, reject) {
+      if (cond1) {
+        return promise1;
+      } else {
+        resolve(false);
+      }
+    }).then((val) => {
+      if (val) {
+        set some property with val;
+      }
+
+      if (cond2) {
+        return promise2;
+      } else {
+        return false;
+      }
+    }).then((val) => {
+      if (val) {
+        set some property with val;
+      }
+
+      perform ending code;
+    });
+  </pre>
+
+  The returing false and creating a new promise felt wrong, and the code didn't look very good. Looking into
+  Promises more, I found the Promise.all() method, which will wait for all the promises in a list of promises
+  to resolve before resolving. Now, the code looks more like this:
+
+  <pre>
+    create empty promise array;
+
+    if (cond1) {
+      promise1.then((val) => { set property based on val});
+      add to promise array
+    }
+
+    if (cond2) {
+      promise2.then((val) => { set property based on val });
+      add to promise array
+    }
+
+    Promise.all(promise array).then(() => {
+      perform ending code;
+    });
+  </pre>
+
+  To me, that code "tastes" much better.
+</p>
