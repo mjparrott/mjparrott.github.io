@@ -49,8 +49,7 @@ li
 
 .section-title
 {
-  font-style: italic;
-  font-size: 15px;
+  font-size: 18px;
   border-bottom: 1px solid black;
   margin-bottom: 8px;
 }
@@ -74,13 +73,15 @@ li
 {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 #header #name
 {
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 #header p
@@ -90,7 +91,7 @@ li
 
 #header .contact-info
 {
-  text-align: right;
+  text-align: center;
 }
 
 /**
@@ -98,7 +99,7 @@ li
  */
 .job
 {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 #last-job
 {
@@ -107,7 +108,6 @@ li
 
 .job .job-title
 {
-  font-style: italic;
 }
 
 .job .job-employer
@@ -150,6 +150,15 @@ li
 }
 
 /**
+ * Education
+ */
+.note
+{
+  font-style: italic;
+}
+
+
+/**
  * Extracurriculars section
  */
 .extracurricular
@@ -165,3 +174,5 @@ li
 .time-frame {
   float: right;
 }
+
+
